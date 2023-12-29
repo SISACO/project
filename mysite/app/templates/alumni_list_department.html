@@ -1,0 +1,51 @@
+<!-- alumni_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni List</title>
+    <style>
+        /* Add some basic styling for the cards */
+        .alumni-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the photo thumbnail */
+        .alumni-photo {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Alumni List</h2>
+
+{% if selected_department %}
+    <p>Displaying alumni for department: {{ selected_department }}</p>
+{% endif %}
+
+{% for alumni in alumni_data %}
+    <div class="alumni-card">
+        <h3>{{ alumni.full_name }}</h3>
+        <p>Graduation Year: {{ alumni.graduation_year }}</p>
+        <p>Contact Email: {{ alumni.contact_email }}</p>
+        <p>Job Title: {{ alumni.job_title }}</p>
+        <p>Company: {{ alumni.company }}</p>
+        <p>Industry: {{ alumni.industry }}</p>
+        <p>LinkedIn Profile: <a href="{{ alumni.linkedin_profile }}" target="_blank">{{ alumni.linkedin_profile }}</a></p>
+        <p>Major: {{ alumni.major }}</p>
+
+        <!-- Displaying a thumbnail of the alumni photo -->
+        {% if alumni.photo %}
+            <img src="{{ alumni.photo.url }}" alt="{{ alumni.full_name }} Photo" class="alumni-photo">
+        {% endif %}
+    </div>
+{% endfor %}
+
+</body>
+</html>

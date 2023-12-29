@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seethi Sahib Memorial Polytechnic College Alumni Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="World wide comminity of SSM Polytechnic College alumni students" />
+  <meta property="og:site_name" content="Alumni Portal of SSM Polytechnic College" />
+  <meta property="og:url" content="http://www.ssmpoly.ac.in/" />
+  <meta property="og:title" content="Seethi Sahib Memorial Polytechnic College Alumni Portal" />
+  <meta property="og:description" content="World wide comminity of SSM Polytechnic College alumni students" />
+  <meta property="og:image" content="https://corehub.in/dem0n/ssm-alumni/img/og.jpg" >
+  <meta property="og:image:secure_url" content="https://corehub.in/dem0n/ssm-alumni/img/og.jpg" >
+  <link rel="shortcut icon" href="{% static 'favicon.png' %}" />
+  <link rel="apple-touch-icon" href="{% static 'favicon.png' %}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Add some basic styling for the cards */
+    .alumni-card {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+     /* Style the photo thumbnail */
+     .alumni-photo {
+      max-width: 100px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Alumni List</h2>
+
+
+{% for alumni in alumni_data %}
+    <div class="alumni-card">
+        <h3>{{ alumni.full_name }}</h3>
+        <p>Department: {{ alumni.department }}</p>
+        <p>Graduation Year: {{ alumni.graduation_year }}</p>
+        <p>Contact Email: {{ alumni.contact_email }}</p>
+        <p>Job Title: {{ alumni.job_title }}</p>
+        <p>Company: {{ alumni.company }}</p>
+        <p>Industry: {{ alumni.industry }}</p>
+        <p>LinkedIn Profile: <a href="{{ alumni.linkedin_profile }}" target="_blank">{{ alumni.linkedin_profile }}</a></p>
+        <p>Major: {{ alumni.major }}</p>
+
+        <!-- Displaying a thumbnail of the alumni photo -->
+        {% if alumni.photo %}
+            <img src="{{ alumni.photo.url }}" alt="{{ alumni.full_name }} Photo" class="alumni-photo">
+        {% endif %}
+    </div>
+{% endfor %}
+
+
+</body>
+</html>

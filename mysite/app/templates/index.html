@@ -1,0 +1,541 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seethi Sahib Memorial Polytechnic College Alumni Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="World wide comminity of SSM Polytechnic College alumni students" />
+  <meta property="og:site_name" content="Alumni Portal of SSM Polytechnic College" />
+  <meta property="og:url" content="http://www.ssmpoly.ac.in/" />
+  <meta property="og:title" content="Seethi Sahib Memorial Polytechnic College Alumni Portal" />
+  <meta property="og:description" content="World wide comminity of SSM Polytechnic College alumni students" />
+  <meta property="og:image" content="https://corehub.in/dem0n/ssm-alumni/img/og.jpg" >
+  <meta property="og:image:secure_url" content="https://corehub.in/dem0n/ssm-alumni/img/og.jpg" >
+  <link rel="shortcut icon" href="{% static 'favicon.png' %}" />
+  <link rel="apple-touch-icon" href="{% static 'favicon.png' %}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<section class="container-fluid pt-2 pb-2 bg-warning text-darkblue clearfix">
+  <div class="col-sm-9 mx-auto">
+    <div class="row m-0 align-items-center">
+      <div class="col-5 pe-0" style="font-size:20px">
+        <a href="#" target="_blank" class="text-darkblue me-2 me-lg-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" class="text-darkblue me-2 me-lg-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" class="text-darkblue me-2 me-lg-3"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank" class="text-darkblue"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="col-7 text-end sm-top ps-0">
+        <strong class="sm-hide">Join today to the community!</strong>
+        <a class="btn btn-primary bg-darkblue text-warning rounded-0 border-0 ms-lg-3" href="#"><strong>FOLLOW US ON</strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="container-fluid sticky-top bg-darkblue pt-2 pb-2">
+    <div class="col-sm-9 mx-auto">
+      <nav class="navbar navbar-expand-sm navbar-dark p-0">
+          <button class="navbar-toggler float-start p-0 border-0 lg-hide me-3 me-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="material-icons float-start" style="font-size:30px">menu</span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="{% static 'ssm-logo.png' %}" class="img-fluid logo"></a>
+          <a class="text-warning lg-hide" href="#"><span class="material-icons float-start">person</span></a>
+          <a class="text-warning lg-hide" href="#"><span class="material-icons-outlined float-end">search</span></a>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto font-weight-bold text-uppercase">
+              <li class="nav-item me-lg-3 active"><a class="nav-link" href="{% url 'activities' %}">Home</a></li>
+              <li class="nav-item me-lg-3"><a class="nav-link" href="{% url 'member' %}">Membership</a></li>
+              <li class="nav-item me-lg-3"><a class="nav-link" href="{% url 'activities' %}">Activities</a></li>
+              <li class="nav-item me-lg-3"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item me-lg-3"><a class="nav-link" href="#">Contact US</a></li>
+              <li class="nav-item sm-hide"><a class="nav-link" href="#"><span class="material-icons-outlined float-end">search</span></a></li>
+            </ul>
+      </nav>
+    </div>
+  </section>
+
+
+
+
+<section class="container-fluid pt-4 pt-lg-5 pb-5 border-bottom">
+  <div class="col-sm-9 mx-auto">
+
+    <div class="row">
+
+      <div class="col-sm-8 mb-3">
+        <a href="#" class="position-relative d-block h-100 text-white">
+          <div class="post-overlay position-absolute h-100 w-100" style="background-image:linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.8))">
+            <div class="post-text position-absolute ps-3 ps-lg-4 pe-3 w-100" style="bottom:30px; left:0px;">
+              <h5 class="display-6">Congrats to SSM Polytechnic College Class of 2022</h5>
+              <hr class="border-top border-warning border-4" style="max-width:60px; opacity:1">
+              <p class="one-line mb-0">Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+          </div>
+          <img src="{% static 'post3.webp' %}" class="img-fluid" alt="">
+        </a>
+      </div>
+
+      <div class="col-sm-4">
+
+        <a href="#" class="position-relative d-block text-white mb-3">
+          <div class="post-overlay position-absolute h-100 w-100" style="background-image:linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.8))">
+            <div class="post-text position-absolute ps-3 ps-lg-4 pe-3 w-100" style="bottom:30px; left:0px;">
+              <h5>Congrats to SSM Polytechnic College Class of 2022</h5>
+              <hr class="border-top border-warning border-4" style="max-width:60px; opacity:1">
+              <p class="one-line mb-0"><small>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</small></p>
+            </div>
+          </div>
+          <img src="{% static 'post1.webp' %}" class="img-fluid" alt="">
+        </a>
+
+        <a href="#" class="position-relative d-block text-white mb-3">
+          <div class="post-overlay position-absolute h-100 w-100" style="background-image:linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.8))">
+            <div class="post-text position-absolute ps-3 ps-lg-4 pe-3 w-100" style="bottom:30px; left:0px;">
+              <h5>Congrats to SSM Polytechnic College Class of 2022</h5>
+              <hr class="border-top border-warning border-4" style="max-width:60px; opacity:1">
+              <p class="one-line mb-0"><small>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</small></p>
+            </div>
+          </div>
+          <img src="{% static 'post2.webp' %}" class="img-fluid" alt="">
+        </a>
+
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+
+<section class="container-fluid pt-5 pb-5 border-bottom">
+  <div class="col-sm-9 mx-auto pt-lg-3 pb-lg-3">
+    <div class="row m-0 text-body align-items-center">
+      <div class="col-sm-6 mb-4 mb-lg-0 pe-lg-5"><img src="{% static 'facilities.jpg' %}" class="img-fluid rounded-0" alt="Facilities"></div>
+      <div class="col-sm-6 ps-lg-5">
+        <h1 class="mb-4 text-darkblue"><strong>Our Mission</strong></h1>
+        <hr class="border-top border-warning border-4 mb-4" style="max-width:60px; opacity:1">
+        <p class="text-secondary lead mb-5">Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="row font-weight-bold">
+          <a href="#" class="text-body col-sm-12 mb-3"><span class="material-icons float-start me-4">task_alt</span>Scholarship</a>
+          <a href="#" class="text-body col-sm-12 mb-3"><span class="material-icons float-start me-4">task_alt</span>Help Current Students</a>
+          <a href="#" class="text-body col-sm-12 mb-3"><span class="material-icons float-start me-4">task_alt</span>Help Our College</a>
+          <a href="#" class="text-body col-sm-12 mb-3"><span class="material-icons float-start me-4">task_alt</span>Build Our Community</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="container-fluid pt-5 pb-5 border-bottom">
+  <div class="col-sm-9 mx-auto ">
+
+    <h1 class="mb-4 text-center text-darkblue"><strong>Upcoming Events</strong></h1>
+    <hr class="border-top border-warning border-4 mb-5 mx-auto" style="max-width:60px; opacity:1">
+
+    <div class="mb-1">
+
+    <div class="row">
+
+      <div class="col-sm-4 mb-4">
+        <a href="#" class="row event-date p-3 pt-4 pb-4 m-0 h-100 text-body">
+          <div class="col-4 text-center">
+            <div class="border border-3 border-darkblue text-darkblue p-3 mb-2"><h5 class="m-0"><small>MAY</small></h5><h3 class="m-0"><strong>25</strong></h3></div>
+            <div class="p-1 bg-darkblue text-white"><small>IN PERSON</small></div>
+          </div>
+          <div class="col-8">
+            <h5 class="mb-3 three-line font-weight-bold text-darkblue">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5>
+            <p class="text-dark mb-0">Venue : College Auditorium</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4 mb-4">
+        <a href="#" class="row event-date p-3 pt-4 pb-4 m-0 h-100 text-body">
+          <div class="col-4 text-center">
+            <div class="border border-3 border-darkblue text-darkblue p-3 mb-2"><h5 class="m-0"><small>MAY</small></h5><h3 class="m-0"><strong>20</strong></h3></div>
+            <div class="p-1 bg-darkblue text-white"><small>ONLINE</small></div>
+          </div>
+          <div class="col-8">
+            <h5 class="mb-3 three-line font-weight-bold text-darkblue">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5>
+            <p class="text-dark mb-0">Venue : College Auditorium</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4 mb-4">
+        <a href="#" class="row event-date p-3 pt-4 pb-4 m-0 h-100 text-body">
+          <div class="col-4 text-center">
+            <div class="border border-3 border-darkblue text-darkblue p-3 mb-2"><h5 class="m-0"><small>MAY</small></h5><h3 class="m-0"><strong>15</strong></h3></div>
+            <div class="p-1 bg-darkblue text-white"><small>IN PERSON</small></div>
+          </div>
+          <div class="col-8">
+            <h5 class="mb-3 three-line font-weight-bold text-darkblue">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5>
+            <p class="text-dark mb-0">Venue : College Auditorium</p>
+          </div>
+        </a>
+      </div>
+
+      
+    </div>
+
+    </div>
+
+    <p class="text-center"><button class="btn btn-warning rounded-0 text-darkblue ps-4 pe-4 pt-2 pb-2">VIEW MORE EVENTS</button></p>
+    
+  </div>
+</section>
+
+<section class="container-fluid pt-5 pb-5 bg-darkblue text-white">
+  <div class="col-sm-9 mx-auto pt-lg-5 pb-lg-3">
+
+    <h1 class="mb-4"><strong>Departments</strong></h1>
+    <hr class="border-top border-warning border-4 mb-5" style="max-width:60px; opacity:1">
+
+    <div class="row text-body">
+
+      <div class="col-6 col-sm-4 mb-4">
+        <a href="{% url 'alumni_list_department' department='civil_department' %}" class="bg-white text-body d-block p-4 h-100">
+          <span class="material-icons text-secondary float-end ms-3">east</span>
+          <img src="{% static 'civil.webp' %}" class="img-fluid mb-3" alt="" style="max-height:70px">
+          <h5 class="m-0">Civil Engineering</h5>
+          {% if civil_count is not None %}
+          <p>Registered Number of alumnis: {{ civil_count }}</p>
+      {% endif %}
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 mb-4">
+        <a href="{% url 'alumni_list_department' department='mechanical_department' %}" class="bg-white text-body d-block p-4 h-100">
+      
+          <span class="material-icons text-secondary float-end ms-3">east</span>
+          <img src="{% static 'mech.webp' %}" class="img-fluid mb-3" alt="" style="max-height:70px">
+          
+          <h5>Mechanical Engineering</h5>
+          {% if mechanical_count is not None %}
+          <p>Registered Number of alumnis: {{ mechanical_count }}</p>
+      {% endif %}
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 mb-4">
+        <a href="{% url 'alumni_list_department' department='electrical_department' %}" class="bg-white text-body d-block p-4 h-100">
+          <span class="material-icons text-secondary float-end ms-3">east</span>
+          <img src="{% static 'el.png' %}" class="img-fluid mb-3" alt="" style="max-height:70px">
+          <h5>Electrical & Electronics Engineering</h5>
+          {% if electrical_count is not None %}
+          <p>Registered Number of alumnis: {{ electrical_count }}</p>
+      {% endif %}
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 mb-4">
+        <a href="{% url 'alumni_list_department' department='electronics_department' %}" class="bg-white text-body d-block p-4 h-100">
+          <span class="material-icons text-secondary float-end ms-3">east</span>
+          <img src="{% static 'ec.png' %}" class="img-fluid mb-3" alt="" style="max-height:70px">
+          <h5>Electronics Engineering</h5>
+          {% if electronics_count is not None %}
+          <p>Registered Number of alumnis: {{ electronics_count }}</p>
+      {% endif %}
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 mb-4">
+        <a href="{% url 'alumni_list_department' department='automobile_department' %}" class="bg-white text-body d-block p-4 h-100">
+          <span class="material-icons text-secondary float-end ms-3">east</span>
+          <img src="{% static 'auto.png' %}" class="img-fluid mb-3" alt="" style="max-height:70px">
+          <h5 class="m-0">Automobile Engineering</h5>
+          {% if automobile_count is not None %}
+          <p>Registered Number of alumnis: {{ automobile_count }}</p>
+      {% endif %}
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 mb-4">
+        <a href="{% url 'alumni_list_department' department='computer_department' %}" class="bg-white text-body d-block p-4 h-100">
+          <span class="material-icons text-secondary float-end ms-3">east</span>
+          <img src="{%static 'ce.png' %}" class="img-fluid mb-3" alt="" style="max-height:70px">
+          <h5>Computer Engineering</h5>
+          {% if computer_count is not None %}
+          <p>Registered Number of alumnis: {{ computer_count }}</p>
+      {% endif %}
+        </a>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section class="container-fluid pt-5 pb-5 border-bottom">
+  <div class="col-sm-9 mx-auto ">
+
+    <h1 class="mb-4 text-center text-darkblue"><strong>Alumni Stories</strong></h1>
+    <hr class="border-top border-warning border-4 mb-5 mx-auto" style="max-width:60px; opacity:1">
+
+    <div class="section-slide">
+
+    <div class="row">
+
+      <div class="col-3">
+        <img src="{% static 'post1.webp' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 two-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <img src="{% static 'post2.webp' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 two-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <img src="{% static 'post3.webp' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 two-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <img src="{% static 'post1.webp' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 two-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="text-center"><button class="btn btn-warning rounded-0 text-darkblue ps-4 pe-4 pt-2 pb-2">EXPLORE MORE STORIES</button></p>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="container-fluid pt-5 pb-5 stat-bg text-white">
+  <div class="col-sm-9 mx-auto pt-lg-5 pb-lg-3  text-center">
+
+    <h1 class="mb-4 big-heading"><strong>Proud Students of SSM</strong></h1>
+    <hr class="border-top border-warning border-4 mb-5 mx-auto" style="max-width:60px; opacity:1">
+
+    <div class="row pt-lg-5 pb-lg-5">
+
+      <div class="col-sm-4 mb-4">
+        <h1 class="big-heading">79<sup class="text-warning">+</sup></h1>
+        <h5>COUNTRIES</h5>
+      </div>
+
+      <div class="col-sm-4 mb-4">
+        <h1 class="big-heading">46,258<sup class="text-warning">+</sup></h1>
+        <h5>TOTAL ALUMNI</h5>
+      </div>
+
+      <div class="col-sm-4 mb-4">
+        <h1 class="big-heading">24<sup class="text-warning">+</sup></h1>
+        <h5>CLUBS WORLDWIDE</h5>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="container-fluid pt-5 pb-5 border-bottom">
+  <div class="col-sm-9 mx-auto ">
+
+    <h1 class="mb-4 text-center text-darkblue"><strong>Resources from Alumni</strong></h1>
+    <hr class="border-top border-warning border-4 mb-5 mx-auto" style="max-width:60px; opacity:1">
+
+    <div class="section-slide">
+
+    <div class="row">
+
+      <div class="col-3">
+        <img src="{% static 'news1.jpg' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 three-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <img src="{% static 'news2.jpg' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 three-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <img src="{% static 'news3.jpg' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 three-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <img src="{% static 'news1.jpg' %}" class="img-fluid mb-3">
+        <div class="row pb-3 m-0 mb-4 align-items-center">
+          <div class="col-12">
+            <a href="#" class="text-body font-weight-bold"><h5 class="mb-1 three-line">Lorem ipsm dolor sitg amet csetur adipicing elit sed do eiusmod tempor dncint ut labore</h5></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <p class="text-center"><button class="btn btn-warning rounded-0 text-darkblue ps-4 pe-4 pt-2 pb-2">LEARN MORE</button></p>
+    
+  </div>
+</section>
+
+
+<section class="container-fluid pt-5 pb-5">
+  <div class="col-sm-9 mx-auto pt-lg-4 pb-lg-3">
+
+    <h1 class="mb-4 text-darkblue text-center"><strong>Messages From College</strong></h1>
+    <hr class="border-top border-warning border-4 mb-5 mx-auto" style="max-width:60px; opacity:1">
+
+    <div class="row m-0 text-body">
+
+      <div class="col-sm-6 mb-4 pe-lg-5">
+        <div class="row align-items-center bg-light p-3 pt-4 pb-4 p-lg-5 h-100 border">
+          <div class="col-sm-12 mb-4">
+            
+            <h3 class="mb-4">
+              <a class="btn btn-sm btn-outline-secondary float-end ms-3" href="#">Read all</a>
+              <i class='fas fa-quote-left big-heading float-start me-3 text-darkblue'></i>
+              <strong>Chairman's<br> Message</strong> 
+            </h3>
+            <p class="text-secondary lead mb-0 four-line">Seethi Sahib Memorial Polytechnic College is one of the prominent centres of technical education in the state runs under Kerala Muslim Educational Association. The stalwarts of this association had a farsighted vision to impart technical education and uplift the then educationally and socially backward sects of the district Our institution has set specific objectives and planned activities for achieving excellence in all spheres of technical education.</p>
+          </div>
+          <div class="col-3 col-lg-2">
+            <img src="{% static 'chairman.jpg ' %}"class="img-fluid rounded-3" alt="Chairman">
+          </div>
+          <div class="col-9 col-lg-10">
+            <p class="mb-1"><strong>K KUTTY AHAMMED KUTTY</strong></p>
+            <p class="text-secondary mb-0"><small>Chairman Governing Body<br>Former Minister LSGD</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 mb-4 pe-lg-5">
+        <div class="row align-items-center bg-light p-4 p-lg-5 h-100 border">
+          <div class="col-sm-12 mb-4">
+            <h3 class="mb-4">
+              <a class="btn btn-sm btn-outline-secondary float-end ms-3" href="#">Read all</a>
+              <i class='fas fa-quote-left big-heading float-start me-3 text-darkblue'></i>
+              <strong>Principal's<br> Message</strong> 
+            </h3>
+            <p class="text-secondary lead mb-0 four-line">It is my great privilege to warmly welcome you, to the portals of Seethi Sahib Memorial polytechnic college. Established in 1962, the college has emerged as a center for academic excellence in engineering education. </p>
+          </div>
+          <div class="col-3 col-lg-2">
+            <img src="{% static 'principal-new.jpg' %}" class="img-fluid rounded-3" alt="Chairman">
+          </div>
+          <div class="col-9 col-lg-10">
+            <p class="mb-1"><strong>ABDUL NASAR KAIPANCHERRY</strong></p>
+            <p class="text-secondary mb-0"><small>Principal</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section class="container-fluid pt-5 pb-3 bg-darkblue text-white">
+  <div class="col-sm-9 mx-auto">
+
+    <div class="row m-0 align-items-center">
+
+      <div class="col-sm-12 text-center mb-5">
+        <h4 class="mb-3">Follow Us</h4>
+        <div class="table-responsive">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#" target="_blank">
+                <i class="fab fa-facebook-f" style="font-size:28px"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#" target="_blank">
+                <i class="fab fa-twitter" style="font-size:28px"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#" target="_blank">
+                <i class="fab fa-youtube" style="font-size:28px"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#" target="_blank">
+                <i class="fab fa-instagram" style="font-size:28px"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-8 mb-4">
+        <p class="mb-1"><span class="material-icons float-start me-3">call</span><a href="tel:" class="text-white-50 mb-2">8008474764</a></p>
+        <p class="mb-1"><span class="material-icons float-start me-3">mail</span><a href="mailto:" class="text-white-50 mb-2">ssmalumni@gmail.com</a></p>
+        <p class="text-white-50"><span class="material-icons text-white float-start mb-4 me-3">place</span>Alumni Center, SSM Polytechnic College, Malappuram - 676105</p>
+      </div>
+
+
+      <div class="col-sm-4 text-center text-lg-end mb-4">
+        <img src="{% static 'ssm-logo.png' %}" class="img-fluid logo">
+      </div>
+
+      <div class="col-sm-6 text-center text-lg-start text-white-50">
+        <small>&copy; SSM Polytechnic College All rights reserved.</small>
+      </div>
+      
+      <div class="col-sm-6 text-center text-lg-end text-white-50">
+        <small>Powered by <a href="#" class="text-white-50">Corehub Solutions</a></small>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</body>
+</html>
