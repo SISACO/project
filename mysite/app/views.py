@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 from . models import AlumniInfo
 
+from . models import Activities
+
 # Create your views here.
 def index(request):
     computer_count = AlumniInfo.objects.filter(department='computer_department').count()
@@ -13,13 +15,26 @@ def index(request):
     return render(request,'index.html', {'computer_count': computer_count,'civil_count': civil_count,'mechanical_count': mechanical_count,'automobile_count': automobile_count,'electronics_count': electronics_count,'electrical_count': electrical_count,})
 
 def member(request):
-        return render(request,'member.html')
+        selected_department = request.GET.get('department', '')
+        
+        if selected_department:
+           alumni_department = AlumniInfo.objects.filter(department=selected_department)
+        else:
+           alumni_department = AlumniInfo.objects.all()
+           
+        selected_industry = request.GET.get('industry', '')
+        
+        if selected_industry:
+           alumni_data = AlumniInfo.objects.filter(industry=selected_industry)
+        else:
+           alumni_data = AlumniInfo.objects.all()
+        return render(request,'member.html', {'INDUSTRY_CHOICES': AlumniInfo.INDUSTRY_CHOICES, 'selected_industry': selected_industry,'DEPARTMENT_CHOICES': AlumniInfo.DEPARTMENT_CHOICES, 'selected_department': selected_department})
+       
     
 def activities(request):
-        return render(request,'activities.html')
+        activities_posts=Activities.objects.all()
+        return render(request,'activities.html',context={'activities_posts':activities_posts})
     
-def add_alumini(request):
-        return render(request,'add_alumini.html')
     
 def alumni_list(request):
     alumni_data = AlumniInfo.objects.all()

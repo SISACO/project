@@ -30,10 +30,14 @@ nav .active {border-bottom: 4px solid #ffcb05 !important}
 .btn-warning{background-color: #ffcb05 !important; color: #19195f; font-weight:600; border:none;}
 .text-warning{color: #ffcb05 !important;}
 
+/* Activities style*/
+
+
+
 /* membership form style*/
 .container-form2 {
   padding-top: 50px;
- padding-bottom: 700px;
+ padding-bottom: 2000px;
   width: 400px;
   height: 740px;
   margin: auto;

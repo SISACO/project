@@ -1,0 +1,25 @@
+{% load static %}
+<section class="container-fluid sticky-top bg-darkblue pt-2 pb-2">
+    <div class="col-sm-9 mx-auto">
+      <nav class="navbar navbar-expand-sm navbar-dark p-0">
+          <button class="navbar-toggler float-start p-0 border-0 lg-hide me-3 me-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="material-icons float-start" style="font-size:30px">menu</span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="{% static 'ssm-logo.png' %}" class="img-fluid logo"></a>
+          <a class="text-warning lg-hide" href="#"><span class="material-icons float-start">person</span></a>
+          <a class="text-warning lg-hide" href="#"><span class="material-icons-outlined float-end">search</span></a>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<!-- Your navigation HTML -->
+<ul class="navbar-nav ms-auto font-weight-bold text-uppercase">
+    <li class="nav-item me-lg-3 {% if request.path == '/' %}active{% endif %}"><a class="nav-link" href="/">Home</a></li>
+    <li class="nav-item me-lg-3 {% if request.path == '/member/' %}active{% endif %}"><a class="nav-link" href="{% url 'member' %}">Membership</a></li>
+    <li class="nav-item me-lg-3 {% if request.path == '/activities/' %}active{% endif %}"><a class="nav-link" href="{% url 'activities' %}">Activities</a></li>
+    <li class="nav-item me-lg-3 "><a class="nav-link" href="*">About</a></li>
+    <li class="nav-item me-lg-3 "><a class="nav-link" href="*">Batches</a></li>
+    <li class="nav-item sm-hide"><a class="nav-link" href="#"><span class="material-icons-outlined float-end">search</span></a></li>
+</ul>
+
+      </nav>
+    </div>
+  </section>
